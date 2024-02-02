@@ -1,11 +1,15 @@
+import Header from "./assets/components/Header"
+import Home from "./assets/components/Home"
+import Footer from "./assets/components/Footer"
 
 function App() {
   
   return (
     <>
-     <div className="bg-blue-400 text-white"> 
-      hello shiv
-     </div>
+  
+     <Header />
+     <Home />
+     <Footer />
     </>
   )
 }

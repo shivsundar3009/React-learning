@@ -7,7 +7,7 @@ In May 2013, at JSConf US, the project was officially open-sourced, marking a si
 The major features of React are:
 
 Uses JSX syntax, a syntax extension of JS that allows developers to write HTML in their JS code.
-
+git 
 It uses Virtual DOM instead of Real DOM considering that Real DOM manipulations are expensive.
 
 Supports server-side rendering which is useful for Search Engine Optimizations(SEO).

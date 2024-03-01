@@ -1,5 +1,15 @@
+import { useState } from "react"
+import usecurrencyInfo from "./hooks/usecurrencyInfo"
 
 function App() {
+
+  const [currency, setCurrency] = useState('inr')
+
+  const data = usecurrencyInfo(currency)
+
+  const options = Object.keys(data[currency])
+
+  console.log(options.map(i => i))
 
 
   return (

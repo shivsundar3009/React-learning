@@ -10,7 +10,7 @@ function usecurrencyInfo(currency = 'inr') {
         .then((res) => res.json())
         .then((data) => {
            console.log(data)
-          return setData(data)
+          return setData(data[currency])
         })
         .catch()
 

@@ -1,5 +1,6 @@
 import { useState } from "react"
 import usecurrencyInfo from "./hooks/usecurrencyInfo"
+import { Input } from "./components/index"
 
 function App() {
 
@@ -7,14 +8,22 @@ function App() {
 
   const data = usecurrencyInfo(currency)
 
-  const options = Object.keys(data[currency])
+  const options = Object.keys(data)
 
   console.log(options.map(i => i))
 
 
   return (
    <>
-       <h1 className='text-3xl bg-pink-400'>Currency Converter </h1>
+       <div className=" flex justify-center items-center bg-[url('./assets/currency.jpg')] h-screen">
+        <div className="bg-[#bde0fe] h-80 w-1/2">
+          <h1 className="text-3xl">currency Converter</h1>
+       <Input input={5}/>
+        </div>
+
+       </div>
+
+
    </>
   )
 }

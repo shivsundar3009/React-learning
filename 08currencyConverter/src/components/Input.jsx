@@ -1,10 +1,16 @@
 import React from 'react'
 
-function Input() {
+function Input({
+  amount,
+  onAmountChange,
+  currency,
+  onCurrencyChange,
+  label,
+  
+}) {
 
-    from
   return (
-    <div>Input</div>
+    <div>Input{input}</div>
   )
 }
 

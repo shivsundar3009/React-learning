@@ -1,16 +1,16 @@
 import {useEffect , useState} from 'react'
 
-function usecurrencyInfo(currency = 'inr') {
+function usecurrencyInfo(currency = 'INR') {
 
    const [data, setData] = useState({})
 
      useEffect(() => {
 
-        fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currencies/${currency}.json`)
+        fetch(`https://openexchangerates.org/api/latest.json?app_id=088310d9e24c49dd996c3747bdcd3e18&base=USD`.json)
         .then((res) => res.json())
         .then((data) => {
            console.log(data)
-          return setData(data[currency])
+          return setData(data[rates])
         })
         .catch()
 
